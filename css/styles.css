@@ -145,6 +145,11 @@ body {
 .boss {
   background: var(--navyblue);
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
 }
 
 .boss-container {
@@ -191,6 +196,21 @@ body {
   display: flex;
   gap: 24px;
 }
+
+.advantages-block {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.advantages-icon {
+}
+
 .advantages-item {
   width: calc((100% - 72px) / 4);
 }
