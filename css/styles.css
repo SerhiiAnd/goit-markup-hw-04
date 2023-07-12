@@ -376,14 +376,14 @@ body {
   justify-content: center;
   color: #8e8f99;
 }
-
-.customer-link:hover,
-.customer-link:focus {
-  background-color: #404bbf;
+.customer-link:is(:hover, :focus) {
+  border-color: #404bbf;
 }
-
 .custom-icon {
   fill: currentColor;
+}
+.custom-icon:is(:hover, :focus) {
+  fill: #404bbf;
 }
 
 /*---------------- FOOTER --------------*/
@@ -482,6 +482,10 @@ body {
   padding: 12px 24px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-title:hover,
@@ -489,6 +493,8 @@ body {
   color: #ffffff;
   background-color: #404bbf;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*---------------- PRTF ---------------*/
@@ -524,8 +530,32 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.prtf {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0%);
+}
+
+.con-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.con-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*----------MODAL--------*/
-.backdrop {
+/*.backdrop {
   position: fixed;
   top: 0;
   width: 100%;
@@ -535,6 +565,6 @@ body {
   width: 408px;
   min-height: 584px;
   /* background-color: #fcfcfc;*/
-  border-radius: 4px;
-  position: absolute;
-}
+/*border-radius: 4px;*/
+/*position: absolute;*
+}*/
