@@ -340,6 +340,19 @@ body {
   background: var(--navyblue);
   padding: 100px 0;
 }
+.foot {
+  display: flex;
+  align-items: baseline;
+}
+
+.foo-con {
+  margin-right: 120px;
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .footer-logo-blue {
   color: var(--iris);
   font-size: 18px;
@@ -363,6 +376,10 @@ body {
 
 .footer-soc {
   max-width: 208px;
+}
+.footer-box {
+  display: flex;
+  gap: 16px;
 }
 
 .footer-logo {
