@@ -150,6 +150,10 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .boss-container {
@@ -206,6 +210,7 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
+  justify-content: center;
 }
 
 .advantages-icon {
