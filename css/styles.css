@@ -347,11 +347,6 @@ body {
 
 .foo-con {
   margin-right: 120px;
-  width: 100%;
-  max-width: 1158px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .footer-logo-blue {
   color: var(--iris);
@@ -375,7 +370,6 @@ body {
 }
 
 .footer-soc {
-  max-width: 208px;
 }
 .footer-box {
   display: flex;
