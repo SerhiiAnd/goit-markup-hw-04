@@ -642,6 +642,7 @@ body {
   background-color: #404bbf;
 }
 
-.modal-icon:is(:hover, :focus) {
+.modal-close-btn:hover .modal-icon,
+.modal-close-btn:focus .modal-icon {
   fill: #ffffff;
 }
