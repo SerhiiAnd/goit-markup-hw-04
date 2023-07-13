@@ -638,10 +638,10 @@ body {
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
+  border: none;
   background-color: #404bbf;
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
+.modal-icon:is(:hover, :focus) {
   fill: #ffffff;
 }
