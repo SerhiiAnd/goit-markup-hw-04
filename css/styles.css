@@ -105,6 +105,7 @@ body {
 }
 
 .head-menu-link {
+  display: block;
   color: #2e2f42;
   font-size: 16px;
   font-style: normal;
@@ -172,6 +173,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: auto;
 }
 
 .boss-container {
@@ -233,7 +235,6 @@ body {
 }
 
 .advantages-icon {
-  margin: auto;
 }
 
 .advantages-item {
@@ -353,6 +354,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin: 8px;
 }
 
 /*-----------CUSTOMER-----------*/
@@ -557,7 +559,8 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.prtf:hover .con-text {
+.prtf:hover .con-text,
+.prtf:focus .con-text {
   transform: translateY(0%);
 }
 .prtf-item {
